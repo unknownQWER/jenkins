@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: web-fb
+  profiles:
+    active: dev
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:50012/eureka
+

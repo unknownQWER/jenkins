@@ -1,0 +1,18 @@
+server:
+  port: 50022
+spring:
+  application:
+    name: zuul-application
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:50012/eureka
+    registry-fetch-interval-seconds: 5
+zuul:
+  prefix: /api # 添加路由前缀
+  routes:
+    core-service: /core/**
+    web-fb: /fb/**
+  add-host-header: true #携带请求本身的host头信息
+  sensitive-headers: #禁止使用的头信息,设置为null,否则set-cookie无效
+

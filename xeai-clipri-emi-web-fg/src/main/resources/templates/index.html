@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <input placeholder="A" id="a">+<input placeholder="B" id="b">=<input placeholder="c" disabled="disabled" id="c"></input>    <button onclick="f()" id="button">确定</button>
+</div>
+<script>
+    function f() {
+        xmlHttp=new XMLHttpRequest();
+        var a=document.getElementById("a")
+        var b=document.getElementById("b")
+        var url = "http://localhost:50022/api/fb/math?a="+a.value+"&b="+b.value
+        xmlHttp.open("GET",url,true);
+        xmlHttp.send()
+        xmlHttp.onreadystatechange=function () {
+            if (xmlHttp.readyState ==4 && xmlHttp.status == 200){
+                var c=document.getElementById("c")
+                console.log(xmlHttp.responseText)
+                c.setAttribute("placeholder",xmlHttp.responseText)
+
+            }
+        }
+    }
+</script>
+</body>
+</html>

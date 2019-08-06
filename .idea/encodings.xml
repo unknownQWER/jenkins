@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xeai-clipri-emi-web-fg" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xeai-serpri-emi-core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xeai-serpri-emi-core/xeai-serpri-emi-core-interface" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xeai-xkit-springcloud-eureka" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xeai-xkit-springcloud-gateway" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>
